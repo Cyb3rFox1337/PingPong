@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PingPong - customizable</title>
+  <link rel="stylesheet" href="STYLE.css">
+  </link>
+</head>
+
+<body>
+  <h1>Bouncing Ball Game</h1>
+  <div class="container">
+    <div class="canvas-container">
+      <canvas id="gameCanvas"></canvas>
+      <div id="pauseIcon">&#10074;&#10074;</div>
+    </div>
+    <div class="input-container">
+      <div class="input-row">
+        <div class="input-group">
+          <label for="canvasWidth">Canvas Width:</label>
+          <input type="number" id="canvasWidth" value="800">
+        </div>
+        <div class="input-group">
+          <label for="canvasHeight">Canvas Height:</label>
+          <input type="number" id="canvasHeight" value="600">
+        </div>
+      </div>
+      <div class="input-row">
+        <div class="input-group">
+          <label for="platformWidth">Platform Width:</label>
+          <input type="number" id="platformWidth" value="100">
+        </div>
+        <div class="input-group">
+          <label for="platformHeight">Platform Height:</label>
+          <input type="number" id="platformHeight" value="10">
+        </div>
+        <div class="input-group">
+          <label for="topPlatformColor">Top Platform Color:</label>
+          <input type="color" id="topPlatformColor" value="#ff0000">
+        </div>
+        <div class="input-group">
+          <label for="bottomPlatformColor">Bottom Platform Color:</label>
+          <input type="color" id="bottomPlatformColor" value="#00ff00">
+        </div>
+      </div>
+      <div class="input-row">
+        <div class="input-group">
+          <label for="circleRadius">Circle Radius:</label>
+          <input type="number" id="circleRadius" value="20">
+        </div>
+        <div class="input-group">
+          <label for="circleColor">Circle Color:</label>
+          <input type="color" id="circleColor" value="#0000ff">
+        </div>
+        <div class="input-group">
+          <label for="circleSpeed">Circle Speed:</label>
+          <input type="number" id="circleSpeed" value="5">
+        </div>
+        <div class="input-group">
+          <label for="platformSpeed">Platform Speed:</label>
+          <input type="number" id="platformSpeed" value="5">
+        </div>
+      </div>
+      <div class="buttons-container">
+        <button id="startButton">START GAME</button>
+        <button id="stopButton">STOP GAME</button>
+        <button id="resetButton">RESET GAME</button>
+      </div>
+      <div class="warning">
+        <p>WARNING:</p>
+        <p>The customization fields are only experimental and could lead to the game working incorrectly.</p>
+      </div>
+    </div>
+  </div>
+  <script src="SCRIPT.js"></script>
+</body>
+
+</html>
